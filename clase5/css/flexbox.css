@@ -1,0 +1,52 @@
+body{
+    background-color: hsl(185, 100%, 14%);
+}
+main{
+    width: 768px;
+    margin: auto;
+    height: 700px;
+    background-color: hsl(185, 100%, 8%);
+}
+
+/* id="primero" */
+#primero{
+    height: 300px;
+    background-color: hsl(200, 100%, 6%);
+    margin: 24px 0px;
+
+    /* Distribución del contenido */
+    display: flex;
+    /* Distribución del contenido en el eje horizontal */
+    /* justify-content: center; */
+    justify-content: space-between;
+
+    /* Distribución del contenido en el eje vertical */
+    align-items: center;
+}
+
+/* id="segundo" */
+#segundo{
+    height: 300px;
+    background-color: hsl(174, 100%, 6%);
+    margin: 24px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* selector descedente   padre hijo   */
+/* todos los articles que estén dentro de #primero */
+    #primero article{
+            height: 64px;
+            width: 128px;
+            background-color: hsl(174, 100%, 36%);
+            border: 1px solid white;
+    }
+
+/* todos los articles que estén dentro de #segundo */    
+    #segundo article{
+        height: 64px;
+        width: 128px;
+        background-color: hsl(174, 100%, 20%);
+        border: 1px solid white;
+    }
